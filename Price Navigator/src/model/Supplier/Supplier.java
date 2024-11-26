@@ -10,6 +10,7 @@ package model.Supplier;
  */
 public class Supplier {
     
+<<<<<<< HEAD
     
     
     
@@ -17,4 +18,6 @@ public class Supplier {
     //ans
     
     
+=======
+>>>>>>> 94b3baf (Supplier package)
 }
