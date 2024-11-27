@@ -11,5 +11,5 @@ package model.Supplier;
 public class Supplier {
     
     
-    s
+    
 }
