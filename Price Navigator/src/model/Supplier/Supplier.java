@@ -10,6 +10,18 @@ package model.Supplier;
  */
 public class Supplier {
     
+<<<<<<< HEAD
+<<<<<<< HEAD
     
     
+    
+    
+    //ans
+    
+    
+=======
+>>>>>>> 94b3baf (Supplier package)
+=======
+    
+>>>>>>> 252ea14 (Supplier package)
 }
