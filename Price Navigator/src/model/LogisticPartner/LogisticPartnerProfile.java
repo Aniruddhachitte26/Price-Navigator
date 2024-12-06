@@ -11,7 +11,11 @@ import model.Personnel.Profile;
 
 /**
  *
+<<<<<<< HEAD
  * @author Aniruddha
+=======
+ * @author Sameer
+>>>>>>> a98def8614e33dd84ba0b37f6725b7413c91c31a
  */
 public class LogisticPartnerProfile extends Profile {
     
@@ -37,4 +41,8 @@ public class LogisticPartnerProfile extends Profile {
         return  "LogisticPartnerUser";
     }
     
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a98def8614e33dd84ba0b37f6725b7413c91c31a

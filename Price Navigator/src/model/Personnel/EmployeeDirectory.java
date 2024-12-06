@@ -1,7 +1,12 @@
 /*
+<<<<<<< HEAD
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+=======
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+>>>>>>> a98def8614e33dd84ba0b37f6725b7413c91c31a
  */
 package model.Personnel;
 
@@ -10,10 +15,17 @@ import java.util.ArrayList;
 
 /**
  *
+<<<<<<< HEAD
  * @author Aniruddha
  */
 public class EmployeeDirectory {
 
+=======
+ * @author Sameer
+ */
+public class EmployeeDirectory {
+    
+>>>>>>> a98def8614e33dd84ba0b37f6725b7413c91c31a
     Business business;
     ArrayList<EmployeeProfile> employeelist;
 
@@ -21,7 +33,10 @@ public class EmployeeDirectory {
 
         business = d;
         employeelist = new ArrayList();
+<<<<<<< HEAD
 
+=======
+>>>>>>> a98def8614e33dd84ba0b37f6725b7413c91c31a
     }
 
     public EmployeeProfile newEmployeeProfile(Person p) {
@@ -41,5 +56,9 @@ public class EmployeeDirectory {
         }
             return null; //not found after going through the whole list
          }
+<<<<<<< HEAD
+=======
+   
+>>>>>>> a98def8614e33dd84ba0b37f6725b7413c91c31a
     
 }

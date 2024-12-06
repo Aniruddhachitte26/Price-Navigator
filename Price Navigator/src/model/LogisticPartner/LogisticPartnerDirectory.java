@@ -9,7 +9,11 @@ import model.Personnel.Person;
 
 /**
  *
+<<<<<<< HEAD
  * @author Aniruddha
+=======
+ * @author Sameer
+>>>>>>> a98def8614e33dd84ba0b37f6725b7413c91c31a
  */
 public class LogisticPartnerDirectory {
     
