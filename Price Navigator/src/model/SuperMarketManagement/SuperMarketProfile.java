@@ -17,7 +17,7 @@ import model.ProductManagement.Product;
 
 /**
  *
- * @author manikanta
+ * @author alshi
  */
 public class SuperMarketProfile extends Profile {
 
