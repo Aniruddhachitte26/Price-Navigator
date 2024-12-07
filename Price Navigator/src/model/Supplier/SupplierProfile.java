@@ -7,11 +7,7 @@ package model.Supplier;
 
 /**
  *
-<<<<<<< HEAD
- * @author manikanta
-=======
- * @author divyansjemni
->>>>>>> 26b3689e02fcede2f984ed7880e813ebd7595d44
+ * @author alshi
  */
 
 
