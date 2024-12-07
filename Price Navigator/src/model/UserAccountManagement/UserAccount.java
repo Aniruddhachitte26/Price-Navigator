@@ -13,6 +13,7 @@ import model.Personnel.Profile;
  */
 public class UserAccount {
     
+    
     Profile profile;
     String username;
     String password;
