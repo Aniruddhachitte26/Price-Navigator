@@ -14,7 +14,11 @@ import model.ProductManagement.Product;
 
 /**
  *
+<<<<<<< HEAD
  * @author manikanta
+=======
+ * @author divyansjemni
+>>>>>>> 26b3689e02fcede2f984ed7880e813ebd7595d44
  */
 public class SupplierDirectory {
     
