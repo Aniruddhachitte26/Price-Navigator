@@ -14,6 +14,7 @@ import model.Personnel.Person;
  * @author diviyasjemni
  */
 public class RegularUserDirectory {
+    
 
     ArrayList<RegularUserProfile> regularuserlist;
 
