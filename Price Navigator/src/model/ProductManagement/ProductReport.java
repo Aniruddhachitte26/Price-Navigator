@@ -5,14 +5,13 @@
 package model.ProductManagement;
 
 import java.util.List;
-import model.OrderManagement.OrderItem;
+import model.Supplier.Supplier;
 import model.OrderManagement.OrderItem;
 /**
  *
- * @author alshi
+ * @author josephjoshiaerrolla
  */
 public class ProductReport {
-    public class ProductReport {
     
     private int newTargetPrice;
 

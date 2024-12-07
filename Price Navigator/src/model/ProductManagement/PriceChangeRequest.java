@@ -6,10 +6,11 @@ package model.ProductManagement;
 
 /**
  *
- * @author alshi
+ * @author manikanta
  */
 public class PriceChangeRequest {
- private String productName;
+    
+    private String productName;
     private int newTargetPrice;
     private String salesPersonName; // Assuming you will store the name; alternatively, store the SalesPersonProfile
     private String supplierName; // Assuming you will store the name; alternatively, store the Supplier

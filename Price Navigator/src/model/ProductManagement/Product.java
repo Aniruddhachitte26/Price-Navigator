@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package model.ProductManagement;
 
@@ -9,7 +10,7 @@ import model.OrderManagement.OrderItem;
 
 /**
  *
- * @author alshi
+ * @author josephjoshiaerrolla
  */
 public class Product {
     private String name;
@@ -240,4 +241,3 @@ public class Product {
 
     
 }
-
