@@ -11,7 +11,7 @@ import model.Personnel.Profile;
 
 /**
  *
- * @author diviyabharrathi
+ * @author diviyansjemni
  */
 public class RegulatoryBodyProfile extends Profile {
     

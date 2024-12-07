@@ -10,7 +10,7 @@ import model.RegularUser.RegularUserProfile;
 
 /**
  *
- * @author diviyabharrathi
+ * @author diviyansjemni
  */
 public class RegulatoryBodyDirectory {
 
