@@ -19,6 +19,7 @@ public class UserAccount {
     String password;
     boolean isEnabled;
     
+    
     public UserAccount (Profile profile, String un, String pw){
         username = un;
          password = pw;
