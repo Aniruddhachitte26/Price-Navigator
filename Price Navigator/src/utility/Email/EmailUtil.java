@@ -25,7 +25,7 @@ public class EmailUtil {
             msg.addHeader("format", "flowed");
             msg.addHeader("Content-Transfer-Encoding", "8bit");
 
-            msg.setFrom(new InternetAddress("no_reply@example.com", "MarketHarmonix"));
+            msg.setFrom(new InternetAddress("no_reply@example.com", "PriceNavigator"));
 
             msg.setReplyTo(InternetAddress.parse("no_reply@example.com", false));
 

@@ -14,7 +14,6 @@ import model.Personnel.Person;
  * @author diviyasjemni
  */
 public class RegularUserDirectory {
-    
 
     ArrayList<RegularUserProfile> regularuserlist;
 
@@ -38,12 +37,12 @@ public class RegularUserDirectory {
                 return sp;
             }
         }
-            return null; //not found after going through the whole list
-         }
+        return null; //not found after going through the whole list
+    }
 
     // Method to get all regular user profiles
     public List<RegularUserProfile> getRegularUserProfiles() {
         return regularuserlist;
     }
-    
+
 }

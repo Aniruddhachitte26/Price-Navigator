@@ -13,18 +13,18 @@ import java.util.ArrayList;
  * @author divyansjemni
  */
 public class UserAccountDirectory {
-    
-      ArrayList<UserAccount> useraccountlist ;
-    
-      public UserAccountDirectory (){
-          
-       useraccountlist = new ArrayList();
+
+    ArrayList<UserAccount> useraccountlist;
+
+    public UserAccountDirectory() {
+
+        useraccountlist = new ArrayList();
 
     }
 
     public UserAccount newUserAccount(Profile p, String un, String pw) {
 
-        UserAccount ua = new UserAccount (p,  un,  pw);
+        UserAccount ua = new UserAccount(p, un, pw);
         useraccountlist.add(ua);
         return ua;
     }
@@ -37,9 +37,10 @@ public class UserAccountDirectory {
                 return ua;
             }
         }
-            return null; //not found after going through the whole list
-         }
-     public UserAccount AuthenticateUser(String un, String pw) {
+        return null; //not found after going through the whole list
+    }
+
+    public UserAccount AuthenticateUser(String un, String pw) {
 
         for (UserAccount ua : useraccountlist) {
 
@@ -47,14 +48,14 @@ public class UserAccountDirectory {
                 return ua;
             }
         }
-            return null; //not found after going through the whole list
-         }   
-     
-         public ArrayList<UserAccount> getUserAccountList() {
+        return null; //not found after going through the whole list
+    }
+
+    public ArrayList<UserAccount> getUserAccountList() {
         return useraccountlist;
     }
-         
-         public Boolean isUserNameAvailable(String un) {
+
+    public Boolean isUserNameAvailable(String un) {
 
         for (UserAccount ua : useraccountlist) {
             if (ua.getUserLoginName().equals(un)) {
@@ -62,6 +63,6 @@ public class UserAccountDirectory {
             }
         }
         return true;
-        
+
     }
 }

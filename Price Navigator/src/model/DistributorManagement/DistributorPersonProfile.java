@@ -22,9 +22,6 @@ public class DistributorPersonProfile extends Profile {
     ArrayList<Order> distributororders;
 
 
-    
-    
-    
     public DistributorPersonProfile(Person p) {
 
         super(p); 

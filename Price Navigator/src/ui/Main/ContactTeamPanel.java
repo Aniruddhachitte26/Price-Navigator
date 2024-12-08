@@ -19,7 +19,7 @@ import static utility.Email.SmtpEmail.sendEmailMessage;
  * @author Aniruddha
  */
 public class ContactTeamPanel extends javax.swing.JPanel {
-    
+
     JPanel CardSequencePanel;
     Business business;
     Supplier selectedsupplier;
@@ -31,7 +31,7 @@ public class ContactTeamPanel extends javax.swing.JPanel {
      * Creates new form ContactTeamPanel
      */
     public ContactTeamPanel(Business b, JPanel clp) {
-        
+
         business = b;
         this.CardSequencePanel = clp;
         initComponents();
@@ -139,21 +139,20 @@ public class ContactTeamPanel extends javax.swing.JPanel {
 
     private void btnSubmitQueryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitQueryActionPerformed
         // TODO add your handling code here:
-        
-    String subject = txtSubject.getText().trim();
-    String query = txtQuery.getText().trim();
-     
-    convertToHtml(query); // converting to html
-    
-    
-    // Check if subject or query is empty
-    if(subject.isEmpty() || query.isEmpty()){
-        JOptionPane.showMessageDialog(this, "Please fill in both the subject and the query.");
-        return;
-    }
-    
-    sendEmailMessage("Pricenavigator1@gmail.com", subject, query);
-        
+
+        String subject = txtSubject.getText().trim();
+        String query = txtQuery.getText().trim();
+
+        convertToHtml(query); // converting to html
+
+        // Check if subject or query is empty
+        if (subject.isEmpty() || query.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Please fill in both the subject and the query.");
+            return;
+        }
+
+        sendEmailMessage("pricenavigator1@gmail.com", subject, query);
+
     }//GEN-LAST:event_btnSubmitQueryActionPerformed
 
     private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
@@ -164,27 +163,27 @@ public class ContactTeamPanel extends javax.swing.JPanel {
         ((java.awt.CardLayout) CardSequencePanel.getLayout()).show(CardSequencePanel, "ll");
         CardSequencePanel.revalidate();
         CardSequencePanel.repaint();
-        
+
     }//GEN-LAST:event_BackActionPerformed
-private String convertToHtml(String text) {
-    // Escape special HTML characters
-    text = text.replace("&", "&amp;")
-               .replace("<", "&lt;")
-               .replace(">", "&gt;")
-               .replace("\"", "&quot;")
-               .replace("'", "&#x27;")
-               .replace("/", "&#x2F;");
+    private String convertToHtml(String text) {
+        // Escape special HTML characters
+        text = text.replace("&", "&amp;")
+                .replace("<", "&lt;")
+                .replace(">", "&gt;")
+                .replace("\"", "&quot;")
+                .replace("'", "&#x27;")
+                .replace("/", "&#x2F;");
 
-    // Replace newlines with <br> tags
-    text = text.replace("\n", "<br>");
-    text = text.replace(",", ",<br>");
-    text = text.replace(".", ".<br>");
+        // Replace newlines with <br> tags
+        text = text.replace("\n", "<br>");
+        text = text.replace(",", ",<br>");
+        text = text.replace(".", ".<br>");
 
-    // Wrap text in <p> tags or any other desired HTML structure
-    text = "<html><body><p>" + text + "</p></body></html>";
+        // Wrap text in <p> tags or any other desired HTML structure
+        text = "<html><body><p>" + text + "</p></body></html>";
 
-    return text;
-}
+        return text;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Back;

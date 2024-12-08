@@ -12,44 +12,49 @@ import model.Personnel.Profile;
  * @author divyanjemni
  */
 public class UserAccount {
-    
-    
+
     Profile profile;
     String username;
     String password;
     boolean isEnabled;
-    
-    
-    public UserAccount (Profile profile, String un, String pw){
+
+    public UserAccount(Profile profile, String un, String pw) {
         username = un;
-         password = pw;
-         this.profile = profile;
-         isEnabled = true;
+        password = pw;
+        this.profile = profile;
+        isEnabled = true;
 
     }
 
-    public String getPersonId(){
+    public String getPersonId() {
         return profile.getPerson().getPersonId();
     }
 
-        public boolean isMatch(String id){
-        if(getPersonId().equals(id)) return true;
+    public boolean isMatch(String id) {
+        if (getPersonId().equals(id)) {
+            return true;
+        }
         return false;
     }
-        public boolean IsValidUser(String un, String pw){
-        
-            if (username.equalsIgnoreCase(un) && password.equals(pw)) return true;
-            else return false;
-        
+
+    public boolean IsValidUser(String un, String pw) {
+
+        if (username.equalsIgnoreCase(un) && password.equals(pw)) {
+            return true;
+        } else {
+            return false;
         }
-        public String getRole(){
-            return profile.getRole();
-        }
-        
-        public Profile getAssociatedPersonProfile(){
-            return profile;
-        }    
-        
+
+    }
+
+    public String getRole() {
+        return profile.getRole();
+    }
+
+    public Profile getAssociatedPersonProfile() {
+        return profile;
+    }
+
     public boolean getIsEnabled() {
         return isEnabled;
     }
@@ -57,24 +62,24 @@ public class UserAccount {
     public void setIsEnabled(boolean isEnable) {
         this.isEnabled = isEnable;
     }
-    
-        public void setUsername(String username) {
+
+    public void setUsername(String username) {
         this.username = username;
     }
 
     public void setPassword(String password) {
         this.password = password;
     }
-    
-        public String getUserLoginName() {
+
+    public String getUserLoginName() {
         return username;
     }
 
     public String getPassword() {
         return password;
     }
-    
-        @Override
+
+    @Override
     public String toString() {
 
         return getUserLoginName();
@@ -85,9 +90,7 @@ public class UserAccount {
     }
 
     public void setUserLoginName(String text) {
-    
+
     }
-    
-    
 
 }

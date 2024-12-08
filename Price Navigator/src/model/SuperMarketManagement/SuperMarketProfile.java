@@ -24,7 +24,7 @@ public class SuperMarketProfile extends Profile {
     ArrayList<Order> orders;
     Person person;
     private double distance; // distance from user
-    
+
     // Additional attribute to track product quantities
     private Map<Product, Integer> productQuantities = new HashMap<>();
 
@@ -34,21 +34,19 @@ public class SuperMarketProfile extends Profile {
         orders = new ArrayList();
 
     }
-    
+
     @Override
-    public String getRole(){
+    public String getRole() {
         return "SuperMarket";
     }
-    
-    public double getDistance() {
-    return this.distance;
-}
 
-public void setDistance(double distance) {
-    this.distance = distance;
-}
-    
-    
+    public double getDistance() {
+        return this.distance;
+    }
+
+    public void setDistance(double distance) {
+        this.distance = distance;
+    }
 
     public int getTotalPricePerformance() {
 
@@ -92,11 +90,8 @@ public void setDistance(double distance) {
     @Override
     public String toString() {
         return person.getPersonId();
-         
+
     }
-    
- 
-    
 
     public String getCustomerId() {
         return person.getPersonId();
@@ -105,12 +100,11 @@ public void setDistance(double distance) {
     public Person getPerson() {
         return person;
     }
-    
-       public ArrayList<Order> getOrders() {
-    return orders;
-       }
-       
-       
+
+    public ArrayList<Order> getOrders() {
+        return orders;
+    }
+
     public void addCustomerOrderNew(Order o) {
         orders.add(o);
         // Update the productQuantities map when an order is added
@@ -130,8 +124,7 @@ public void setDistance(double distance) {
         return true;
     }
 
-       
-       public List<ProductInfo> getAvailableProducts() {
+    public List<ProductInfo> getAvailableProducts() {
         List<ProductInfo> availableProducts = new ArrayList<>();
         for (Order o : orders) {
             for (OrderItem oi : o.getOrderItems()) {
@@ -145,6 +138,7 @@ public void setDistance(double distance) {
     }
 
     public static class ProductInfo {
+
         private Product product;
         private int quantity;
         private int actualPrice;
@@ -167,6 +161,5 @@ public void setDistance(double distance) {
             return actualPrice;
         }
     }
-       
-    
+
 }

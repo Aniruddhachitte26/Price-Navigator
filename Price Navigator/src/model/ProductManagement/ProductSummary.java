@@ -20,7 +20,7 @@ public class ProductSummary {
     int rank; // will be done later
 
     public ProductSummary(Product p) {
-        
+
         subjectproduct = p; //keeps track of the product itself not as well;
         numberofsalesabovetarget = p.getNumberOfProductSalesAboveTarget();
         productpriceperformance = p.getOrderPricePerformance();

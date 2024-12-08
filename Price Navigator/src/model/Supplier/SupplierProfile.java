@@ -2,19 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 package model.Supplier;
 
 /**
  *
  * @author alshi
  */
-
-
 import model.Personnel.Person;
 import model.Personnel.Profile;
 
 public class SupplierProfile extends Profile {
+
     private Supplier supplier;
 
     public SupplierProfile(Person p, Supplier s) {
@@ -27,13 +25,12 @@ public class SupplierProfile extends Profile {
         return "Supplier";
     }
 
-    public Supplier getSupplier(){
+    public Supplier getSupplier() {
         return supplier;
     }
-    
-       public SupplierProfile(Person p) {
+
+    public SupplierProfile(Person p) {
         super(p);
     }
-       
-}
 
+}

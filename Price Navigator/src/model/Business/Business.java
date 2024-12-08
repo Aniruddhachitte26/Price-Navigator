@@ -38,7 +38,6 @@ public class Business {
     SupplierDirectory suppliers;
     RegularUserDirectory regularuser;
     SuperMarketDirectory customerdirectory;
-    // EmployeeDirectory employeedirectory;
     DistributorPersonDirectory salespersondirectory;
     UserAccountDirectory useraccountdirectory;
     EmployeeDirectory employeedirectory;

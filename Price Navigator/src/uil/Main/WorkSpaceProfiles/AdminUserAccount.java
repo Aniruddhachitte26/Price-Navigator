@@ -141,7 +141,7 @@ public class AdminUserAccount extends javax.swing.JPanel {
             + "<p>Your account status has been updated as below:</p>"
             + "<p>Status: " + (isEnabled ? "<b>Enabled</b>" : "<b>Disabled</b>") + "</p>"
             + "<p>If you have any questions, please contact support.</p>"
-            + "<p>Team,<br>Market Harmonix </p>";
+            + "<p>Team,<br>Price Navigator </p>";
     
     // Send email notification to the user
     sendEmailMessage(selecteduseraccount.getProfile().getPerson().getEmail(), emailSubject, emailBody);

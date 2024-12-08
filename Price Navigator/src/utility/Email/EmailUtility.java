@@ -23,7 +23,7 @@ public class EmailUtility {
         // Setup properties for the mail session
         Properties properties = new Properties();
         properties.put("mail.smtp.host", host);
-        properties.put("mail.smtp.port", "465"); // Replace if needed
+        properties.put("mail.smtp.port", "587"); // Replace if needed
         properties.put("mail.smtp.starttls.enable", "true");
         properties.put("mail.smtp.auth", "true");
 

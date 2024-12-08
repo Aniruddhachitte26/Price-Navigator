@@ -15,37 +15,39 @@ import model.Personnel.Profile;
  * @author diviyanjemni
  */
 public class RegularUserProfile extends Profile {
-    
-ArrayList<Order> distributororders;
-private List<Order> orders; 
+
+    ArrayList<Order> distributororders;
+    private List<Order> orders;
 
     public RegularUserProfile(Person p) {
 
-        super(p); 
+        super(p);
         distributororders = new ArrayList();
-        this.orders = new ArrayList<> ();
+        this.orders = new ArrayList<>();
 
     }
-    
+
     public ArrayList<Order> getSalesOrders() {
-    return this.distributororders;
-}
-    public void addSalesOrder(Order o){
+        return this.distributororders;
+    }
+
+    public void addSalesOrder(Order o) {
         distributororders.add(o);
     }
-    
+
     public void addOrder(Order order) {
         orders.add(order);
     }
-    
-        public List<Order> getOrders() {
+
+    public List<Order> getOrders() {
         return orders;
     }
+
     @Override
-    public String getRole(){
-        return  "RegularUser";
+    public String getRole() {
+        return "RegularUser";
     }
-    
+
 }
     
 

@@ -17,40 +17,44 @@ import model.ProductManagement.Product;
  * @author alshi
  */
 public class SupplierDirectory {
-    
-    ArrayList<Supplier> suppliers;
-    private Map<Supplier, SupplierProfile> supplierProfiles; 
 
-    public SupplierDirectory(){
+    ArrayList<Supplier> suppliers;
+    private Map<Supplier, SupplierProfile> supplierProfiles;
+
+    public SupplierDirectory() {
         suppliers = new ArrayList();
         supplierProfiles = new HashMap<>();
     }
-    public Supplier newSupplier(String n){
+
+    public Supplier newSupplier(String n) {
         Supplier supplier = new Supplier(n);
         suppliers.add(supplier);
         return supplier;
 
     }
-    public Supplier findSupplier(String id){
-        
-        for (Supplier supplier: suppliers){
-            
-            if(supplier.getName().equals(id)) return supplier;
+
+    public Supplier findSupplier(String id) {
+
+        for (Supplier supplier : suppliers) {
+
+            if (supplier.getName().equals(id)) {
+                return supplier;
+            }
         }
         return null;
-        }
-    public ArrayList<Supplier> getSuplierList(){
+    }
+
+    public ArrayList<Supplier> getSuplierList() {
         return suppliers;
     }
-    
-        public SupplierProfile newSupplierProfile(Supplier supplier, Person p) {
+
+    public SupplierProfile newSupplierProfile(Supplier supplier, Person p) {
         SupplierProfile supplierProfile = new SupplierProfile(p, supplier);
         supplierProfiles.put(supplier, supplierProfile);
         return supplierProfile;
     }
-        
-        
-        public Optional<Supplier> findSupplierByProduct(Product product) {
+
+    public Optional<Supplier> findSupplierByProduct(Product product) {
         for (Supplier supplier : this.suppliers) {
             // Assuming ProductCatalog has a method to check if it contains a Product
             if (supplier.getProductCatalog().containsProduct(product)) {
@@ -59,8 +63,7 @@ public class SupplierDirectory {
         }
         return Optional.empty();
     }
-        
-    
+
     public SupplierProfile getSupplierProfile(Supplier supplier) {
         return supplierProfiles.get(supplier);
     }
