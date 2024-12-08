@@ -207,7 +207,7 @@ Product products5p10 = productCatalog5.newProduct("Brie Bliss", 2.5, 22.0, 18.0,
         UserAccount supermarketLogin = uadirectory.newUserAccount(customerprofile10, "IKEA", "XXXX");
         UserAccount amazonLogin = uadirectory.newUserAccount(customerprofile4, "Amazon", "XXXX");
         
-        Person supplierPerson = persondirectory.newPerson("supplierDairy","supplierDairy", "manikantapkapalavai@gmail.com", "Vermont", "M", 0);
+        Person supplierPerson = persondirectory.newPerson("supplierDairy","supplierDairy", "Pricenavigator1@gmail.com", "Vermont", "M", 0);
 
 // Creating a SupplierProfile for the user account
        SupplierProfile supplierProfile = suplierdirectory.newSupplierProfile(supplier1, supplierPerson);

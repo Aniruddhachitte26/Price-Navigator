@@ -17,7 +17,7 @@ public class SmtpEmail {
     
         public static void sendEmailMessage(String recipientEmail, String subject, String content) {
         final String fromEmail = "pricenavigator1@gmail.com"; //requires valid gmail id
-        final String password = "Pricenavigator@123"; // correct password for gmail id //brprreipgltwnalv
+        final String password = "xyuz apep ozln klyb"; // correct password for gmail id //brprreipgltwnalv
         final String toEmail = recipientEmail; // can be any email id 
 //
         System.out.println("SSLEmail Start");

@@ -152,7 +152,7 @@ public class ContactTeamPanel extends javax.swing.JPanel {
         return;
     }
     
-    sendEmailMessage("manikantapkapalavai@gmail.com", subject, query);
+    sendEmailMessage("Pricenavigator1@gmail.com", subject, query);
         
     }//GEN-LAST:event_btnSubmitQueryActionPerformed
 

@@ -15,15 +15,15 @@ public class EmailUtility {
     
     public static void sendEmail(String recipientEmail, String subject, String content) {
         // Sender's email credentials and host configuration might be better placed in a configuration file
-        final String from = "Pricenavigator1@gmail.com"; // Replace with sender's email
+        final String from = "pricenavigator1@gmail.com"; // Replace with sender's email
         final String host = "smtp.gmail.com"; // Replace with the SMTP host
-        final String username = "Pricenavigator1@gmail.com"; // Replace with username
-        final String password = "hvdg wrbh rrwb ygnn"; // Replace with password
+        final String username = "pricenavigator1@gmail.com"; // Replace with username
+        final String password = "xyuz apep ozln klyb"; // Replace with password
 
         // Setup properties for the mail session
         Properties properties = new Properties();
         properties.put("mail.smtp.host", host);
-        properties.put("mail.smtp.port", "587"); // Replace if needed
+        properties.put("mail.smtp.port", "465"); // Replace if needed
         properties.put("mail.smtp.starttls.enable", "true");
         properties.put("mail.smtp.auth", "true");
 
