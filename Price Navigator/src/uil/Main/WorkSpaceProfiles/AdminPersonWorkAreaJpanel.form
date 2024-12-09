@@ -39,7 +39,7 @@
                           <Component id="btnSuppliers" max="32767" attributes="0"/>
                           <Component id="btnProfile" alignment="0" max="32767" attributes="0"/>
                           <Component id="btnCustomer" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnRegulatory" alignment="0" min="-2" pref="233" max="-2" attributes="0"/>
+                          <Component id="btnRegulatory" alignment="1" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="49" pref="49" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">

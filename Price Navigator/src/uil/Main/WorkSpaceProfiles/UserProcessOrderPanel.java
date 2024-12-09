@@ -384,7 +384,7 @@ emailBody.append("</table>")
          .append(txtNutritionContent.getText().replace("cart", "order"))
          .append("<br><h5>Happy Shopping!!!!</h5><br>")
          .append("Team,<br>")
-         .append("Market Harmonix.<br>");
+         .append("Price Navigator.<br>");
     
      sendEmailMessage(email, emailSubject, emailBody.toString());
     

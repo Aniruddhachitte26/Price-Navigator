@@ -76,7 +76,7 @@ public class SignupJPanel extends javax.swing.JPanel {
         txtPassword = new javax.swing.JPasswordField();
         Back = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(255, 204, 204));
         setLayout(null);
 
         lblHeading.setBackground(new java.awt.Color(0, 204, 255));
@@ -91,13 +91,13 @@ public class SignupJPanel extends javax.swing.JPanel {
         lblName.setForeground(new java.awt.Color(0, 204, 255));
         lblName.setText("NAME:");
         add(lblName);
-        lblName.setBounds(170, 160, 70, 17);
+        lblName.setBounds(170, 160, 70, 18);
 
         lblAge.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         lblAge.setForeground(new java.awt.Color(0, 204, 255));
         lblAge.setText("AGE:");
         add(lblAge);
-        lblAge.setBounds(180, 190, 70, 17);
+        lblAge.setBounds(180, 190, 70, 18);
 
         lblEmail.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         lblEmail.setForeground(new java.awt.Color(0, 204, 255));
@@ -115,7 +115,7 @@ public class SignupJPanel extends javax.swing.JPanel {
         lblPassword.setForeground(new java.awt.Color(0, 204, 255));
         lblPassword.setText("CONFIRM PASSWORD:");
         add(lblPassword);
-        lblPassword.setBounds(70, 120, 150, 17);
+        lblPassword.setBounds(70, 120, 150, 18);
         add(txtName);
         txtName.setBounds(250, 160, 170, 20);
         add(txtAge);
@@ -144,19 +144,19 @@ public class SignupJPanel extends javax.swing.JPanel {
             }
         });
         add(dropUserType);
-        dropUserType.setBounds(250, 350, 170, 23);
+        dropUserType.setBounds(250, 350, 170, 22);
 
         lblUserType.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         lblUserType.setForeground(new java.awt.Color(0, 204, 255));
         lblUserType.setText("USER TYPE:");
         add(lblUserType);
-        lblUserType.setBounds(140, 350, 90, 17);
+        lblUserType.setBounds(140, 350, 90, 18);
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 204, 255));
         jLabel1.setText("GENDER:");
         add(jLabel1);
-        jLabel1.setBounds(160, 270, 80, 17);
+        jLabel1.setBounds(160, 270, 80, 18);
         add(txtgender);
         txtgender.setBounds(250, 270, 170, 20);
 
@@ -172,7 +172,7 @@ public class SignupJPanel extends javax.swing.JPanel {
         lblPassword1.setForeground(new java.awt.Color(0, 204, 255));
         lblPassword1.setText("PASSWORD:");
         add(lblPassword1);
-        lblPassword1.setBounds(140, 90, 80, 17);
+        lblPassword1.setBounds(140, 90, 80, 18);
 
         txtconfPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -194,7 +194,7 @@ public class SignupJPanel extends javax.swing.JPanel {
             }
         });
         add(Back);
-        Back.setBounds(40, 420, 72, 24);
+        Back.setBounds(40, 420, 72, 26);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSignupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignupActionPerformed
@@ -260,7 +260,7 @@ public class SignupJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this, "user created");
             
                         
-            String Path = "/Users/manikanta/Downloads/MarketHarmonixVersion2/src/images/MarketHarmonix.jpeg";
+            String Path = "C:/Users/alshi/Downloads/price_navigator";
             try {
             Path = encodeFileToBase64Binary(Path);
            } catch (IOException e) {

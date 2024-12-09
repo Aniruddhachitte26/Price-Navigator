@@ -50,7 +50,7 @@ public class LogoutJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 204, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("MarketHarmonix");
+        jLabel1.setText("Price Navigator");
         add(jLabel1);
         jLabel1.setBounds(0, 260, 890, 40);
     }// </editor-fold>//GEN-END:initComponents

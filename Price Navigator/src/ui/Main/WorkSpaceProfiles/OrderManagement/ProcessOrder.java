@@ -338,6 +338,11 @@ DefaultTableModel model = (DefaultTableModel) SupplierCatalogTable.getModel();
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 180, -1));
 
         productFrequencyBelowTargetTextField.setEnabled(false);
+        productFrequencyBelowTargetTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                productFrequencyBelowTargetTextFieldActionPerformed(evt);
+            }
+        });
         jPanel1.add(productFrequencyBelowTargetTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 260, 150, -1));
 
         jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -350,7 +355,7 @@ DefaultTableModel model = (DefaultTableModel) SupplierCatalogTable.getModel();
 
         jLabel7.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 204, 255));
-        jLabel7.setText("Marign around STR Price");
+        jLabel7.setText("Margin around STR Price");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, 160, 20));
 
         productPricePerformanceTextField.setEnabled(false);
@@ -393,6 +398,11 @@ DefaultTableModel model = (DefaultTableModel) SupplierCatalogTable.getModel();
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, 100, 20));
 
         productFrequencyBelowTargetAfterATextField.setEnabled(false);
+        productFrequencyBelowTargetAfterATextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                productFrequencyBelowTargetAfterATextFieldActionPerformed(evt);
+            }
+        });
         jPanel1.add(productFrequencyBelowTargetAfterATextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 260, 150, -1));
 
         jLabel16.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -401,6 +411,11 @@ DefaultTableModel model = (DefaultTableModel) SupplierCatalogTable.getModel();
         jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 240, -1, -1));
 
         productFrequencyAboveTargetAfterATextField.setEnabled(false);
+        productFrequencyAboveTargetAfterATextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                productFrequencyAboveTargetAfterATextFieldActionPerformed(evt);
+            }
+        });
         jPanel1.add(productFrequencyAboveTargetAfterATextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 210, 150, -1));
 
         jLabel17.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -418,7 +433,7 @@ DefaultTableModel model = (DefaultTableModel) SupplierCatalogTable.getModel();
 
         jLabel18.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(0, 204, 255));
-        jLabel18.setText("Marign around STR Price");
+        jLabel18.setText("Margin around STR Price");
         jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 170, 20));
 
         productRevenueAfterATextField.setEnabled(false);
@@ -871,6 +886,18 @@ refreshSupplierProductCatalogTable();
         // TODO add your handling code here:
         loadStandardOrder();
     }//GEN-LAST:event_btnStandardOrderAddProductItemActionPerformed
+
+    private void productFrequencyBelowTargetAfterATextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productFrequencyBelowTargetAfterATextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_productFrequencyBelowTargetAfterATextFieldActionPerformed
+
+    private void productFrequencyAboveTargetAfterATextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productFrequencyAboveTargetAfterATextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_productFrequencyAboveTargetAfterATextFieldActionPerformed
+
+    private void productFrequencyBelowTargetTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productFrequencyBelowTargetTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_productFrequencyBelowTargetTextFieldActionPerformed
 
     
     public void loadStandardOrder() {

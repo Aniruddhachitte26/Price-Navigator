@@ -144,7 +144,7 @@ public class MarketHarmonix extends javax.swing.JFrame {
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Market Harmonix");
+        jLabel3.setText("Price Navigator");
         CardSequencePanel.add(jLabel3, "card2");
 
         SplitHomeArea.setRightComponent(CardSequencePanel);

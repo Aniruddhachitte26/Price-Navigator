@@ -230,7 +230,7 @@ private void populateRecommendationTable(String Productname, int floorPrice, int
 
         jLabel8.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 204, 255));
-        jLabel8.setText("Marign around STR Price you have so far:");
+        jLabel8.setText("Margin around STR Price you have so far:");
 
         jLabel9.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel9.setText("**Don't see any recommendation values to improve your Margin?? ");
